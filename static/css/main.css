@@ -1,0 +1,576 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.header-container,
+.footer-container,
+.main {
+    background: white;
+}
+
+.title {
+    color: white;
+}
+
+#icon-menu:hover {
+    cursor: pointer;
+}
+
+a.title {
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+#main-logo {
+    height: 45px;
+    width: 180px;
+}
+
+#phone a {
+    color: #00507A;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: .96em;
+}
+
+a.phone-link {
+    color: #00507A;
+}
+
+#icon-menu, #phone {
+    /*position: relative;
+    top: 5px;*/
+    /*width: 120px;*/
+    /*text-align: center;*/
+}
+
+#icon-menu {
+    /*display: inline-block;*/
+    float: right;
+    line-height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 40px;
+    width: 40px;
+    background: #008AD3;
+    text-align: center;
+}
+
+#icon-menu.connect {
+    padding-bottom: 20px;
+    /*margin: 0 0 -10px 0;*/
+}
+
+#icon-menu img {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+#log-in {
+    background: #00507A;
+}
+
+header.wrapper #nav-div {
+    width: 100%;
+}
+
+header.wrapper nav ul {
+    display: none;
+    text-align: left;
+    margin: 55px 0 0 0;
+    padding: 0;
+}
+
+header.wrapper nav li {
+    display: block;
+    height: 40px;
+    border-bottom: solid 1px white;
+    margin: 0;
+    text-align: left;
+    background: #008AD3;
+    font-size: .9em;
+}
+
+header.wrapper nav li#top-item {
+    border-top-left-radius: 4px;
+}
+
+header.wrapper nav a {
+    color: white;
+    line-height: 40px;
+    padding-left: 20px;
+    vertical-align: middle;
+    display: block;
+    height: 100%;
+    width: 100%;    
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+aside a.inline-link {
+    color: black;
+}
+
+aside a.inline-link:hover {
+    text-decoration: underline;
+}
+
+aside a.aside-link {
+    color: white;
+}
+
+aside.aside-link:hover {
+    background: #008AD3;
+}
+
+aside {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 4px;
+    background: #00507A;
+    color: white;
+    height: 215px;
+    font-size: .8em;
+    vertical-align: top;
+}
+
+aside.solo-aside {
+    width: 97%;
+    height: 80px;
+}
+
+aside h3, aside p {
+    margin: 5px 15px;
+}
+
+article {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/*aside {
+    height: 300px;
+}*/
+
+#pricing-table {
+    margin: auto 1em;
+}
+
+#pricing-table td, #pricing-table th {
+    border: 1px solid black;
+    padding: .5em;
+}
+
+#contact-form {
+
+}
+
+#contact-form label {
+    display: block;
+}
+
+#contact-form input {
+    margin: .2em;
+    display: block;
+}
+
+#contact-form input[type='checkbox'] {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    a.title {
+        display: inline-block;
+        margin: 10px -10px;
+        width: 70%;
+        text-align: left;
+    }
+
+    #main-logo {
+        height: 50px;
+        width: 200px;
+        margin: 0 10px;
+    }
+
+    #phone {
+        display: inline-block;
+        width: 20% !important;
+        text-align: right !important;
+        margin: 0;
+        font-size: 1em;
+    }
+
+    #icon-menu, #phone {
+        position: relative;
+        top: 10px;
+        right: 6px;
+    }
+
+    #icon-menu {
+        display: none;
+        float: right;
+        line-height: 40px;
+        border-radius: 5px;
+        margin: 10px 0;
+        height: 40px;
+        width: 40px;
+        background: #008AD3;
+        text-align: center;
+    }
+
+    #icon-menu.connect {
+        padding-bottom: 20px;
+    }
+
+    #icon-menu img {
+        height: 24px;
+        width: 24px;
+        vertical-align: middle;
+    }
+
+    #log-in {
+        background: #00507A;
+    }
+
+    #phone {
+        color: #00507A;
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        margin: 0 0 5px 0;
+    }
+
+    header.wrapper #nav-div {
+        width: 100%;
+    }
+
+    header.wrapper nav ul {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    header.wrapper nav li {
+        display: inline-block;
+        width: 19.5%;
+        height: 40px;
+        border-right: solid 1px white;
+        border-bottom: none;
+        margin: -2px;
+        text-align: center;
+        background: #008AD3;
+        border-radius: 4px;
+    }
+
+    header.wrapper nav li:hover {
+        background: #00507A;
+    }
+
+    header.wrapper nav li a#top-item {
+        border-top-left-radius: 4px;
+    }
+
+    header.wrapper nav li a#log-in:hover {
+        background: lightgray;
+        color: #00507A;
+    }
+
+    header.wrapper nav a {
+        display: block;
+        height: 100%;
+        width: 100%;    
+        color: white;
+        padding: 0;
+        border-radius: 4px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    aside {
+        display: inline-block;
+        width: 32%;
+        margin: 10px 0;
+        border-radius: 4px;
+        background: #00507A;
+        font-size: .75em;
+        height: 275px;
+        color: white;
+    }
+
+    aside h3, aside p {
+        margin: 5px 15px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #main-logo {
+        height: 75px;
+        width: 300px;
+    }
+
+    #phone {
+        color: #00507A;
+        display: inline-block;
+        width: 30%;
+        text-align: right !important;
+        margin: 0;
+        font-size: 1.25em;
+    }
+
+    aside {
+        display: inline-block;
+        width: 32%;
+        margin: 10px 0;
+        border-radius: 4px;
+        background: #00507A;
+        font-size: .9em;
+        height: 250px;
+        color: white;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+.ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+    content: "";
+}
+
+pre,
+    blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+
+thead {
+    display: table-header-group;
+ /* h5bp.com/t */
+}
+
+tr,
+    img {
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+p,
+    h2,
+    h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+    h3 {
+    page-break-after: avoid;
+}
+}
