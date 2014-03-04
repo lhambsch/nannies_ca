@@ -1,0 +1,1 @@
+web: gunicorn nannies_ca.wsgi
