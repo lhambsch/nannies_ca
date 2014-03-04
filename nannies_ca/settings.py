@@ -55,7 +55,7 @@ ROOT_URLCONF = 'nannies_ca.urls'
 WSGI_APPLICATION = 'nannies_ca.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/Users/lukashambsch/envs/nannies_ca/dev/nannies_ca/templates',
+    os.path.join(os.path.dirname(__file__), 'templates')    
 )
 
 # Database
