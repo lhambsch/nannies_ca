@@ -63,6 +63,15 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+#main-photo {
+    /*text-align: center;*/
+}
+
+#main-photo img {
+    /*height: 500px;*/
+    width: 97%;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -182,7 +191,8 @@ a {
 }
 
 aside a.inline-link {
-    color: black;
+    color: white;
+    text-decoration: underline;
 }
 
 aside a.inline-link:hover {

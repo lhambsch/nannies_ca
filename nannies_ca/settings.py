@@ -22,9 +22,9 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECRET_KEY = '56f^$%vy-dzq^&_a$oe0js=)hw^&0l)8rk2jqevv_ns($!3kn@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -87,7 +87,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/Users/lukashambsch/envs/nannies_ca/dev/nannies_ca/static'
+# STATIC_ROOT = '/Users/lukashambsch/envs/nannies_ca/dev/nannies_ca/static'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
