@@ -10,18 +10,26 @@ from django.template import RequestContext
 
 
 def home(request):
-	return render(request, 'index.html')
+	title = "Find a Nanny, No Finder's Fee - San Diego, CA | Nannies CA"
+	description = "Nannies CA provides full-time nanny services for families in or around San Diego, CA who want a trustworthy nanny for their child or children."
+	return render(request, 'index.html', {'title': title, 'description': description})
 
 
 def about(request):
-	return render(request, 'about.html')
+	title = "Safe, Reliable, and Trustworthy Nannies - San Diego, CA | Nannies CA"
+	description = "Find a nanny with no finder's fee in San Diego, La Jolla, Coronado, Carlsbad, Oceanside, Encinitas, Solana Beach, Del Mar, or surrounding areas."
+	return render(request, 'about.html', {'title': title, 'description': description})
 
 
 def faq(request):
-	return render(request, 'faq.html')
+	title = "Questions and Answers About Our Nannies - San Diego, CA | Nannies CA"
+	description = "Your resource for finding a safe, reliable, and trustworthy nanny to care for your child."
+	return render(request, 'faq.html', {'title': title, 'description': description})
 
 
 def contact(request):
+	title = "Contact Us to Find a Nanny - San Diego, CA | Nannies CA"
+	description = "Contact Nannies CA if you have a question about finding a San Diego nanny or if you would like to get your search started today."
 	successful = False
 	if request.method == 'POST':
 		form = ContactForm(request.POST)
@@ -35,10 +43,10 @@ def contact(request):
 			send_mail('Online Inquiry', message, 'noreply@nanniesca.com', ['nanniesca@gmail.com'], fail_silently=False)
 			successful = True
 			form = ContactForm()
-			return render(request, 'contact.html', {'form': form, 'successful': successful})
+			return render(request, 'contact.html', {'form': form, 'successful': successful, 'title': title, 'description': description})
 	else:
 		form = ContactForm()
-	return render(request, 'contact.html', {'form': form, 'successful': successful})
+	return render(request, 'contact.html', {'form': form, 'successful': successful, 'title': title, 'description': description})
 
 
 def contact_email(request, first, last, phone, body):
@@ -47,7 +55,9 @@ def contact_email(request, first, last, phone, body):
 
 
 def news(request):
-	return render(request, 'news.html')
+	title = "Children's Events and Activites - San Diego, CA | Nannies CA"
+	description = "San Diego children's events and activities."
+	return render(request, 'news.html', {'title': title, 'description': description})
 
 
 def login(request):
@@ -80,5 +90,5 @@ class ContactForm(forms.Form):
 	last = forms.CharField(label='Last Name', max_length=20, required=False)
 	phone = forms.CharField(max_length=20, required=False)
 	email = forms.CharField(max_length=50, required=False)
-	contact = forms.BooleanField(label='Please Contact Me', required=False)
+	contact = forms.BooleanField(label='Please Contact Me', required=False, initial=True)
 	message = forms.CharField(widget=forms.Textarea)

@@ -128,7 +128,7 @@ a.phone-link {
     float: right;
     line-height: 40px;
     border-radius: 5px;
-    margin: 10px 0;
+    /*margin: 10px 0 4px 0;*/
     height: 40px;
     width: 40px;
     background: #008AD3;
@@ -214,7 +214,7 @@ aside {
     border-radius: 4px;
     background: #00507A;
     color: white;
-    height: 215px;
+    height: 250px;
     font-size: .8em;
     vertical-align: top;
 }
@@ -425,6 +425,11 @@ article {
 }
 
 @media only screen and (min-width: 1025px) {
+    /*.wrapper {
+        width: 50%;
+        margin: 0 25%;
+    }*/
+
     #main-logo {
         height: 75px;
         width: 300px;
@@ -448,6 +453,34 @@ article {
         font-size: .9em;
         height: 250px;
         color: white;
+    }
+}
+
+@media only screen and (min-width: 1125px) {
+    .wrapper {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 1325px) {
+    .wrapper {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .wrapper {
+        width: 60%;
+        margin: 0 20%;
+    }
+}
+
+@media only screen and (min-width: 1775px) {
+    .wrapper {
+        width: 50%;
+        margin: 0 25%;
     }
 }
 
