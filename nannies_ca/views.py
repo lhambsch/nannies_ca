@@ -16,13 +16,13 @@ def home(request):
 
 
 def about(request):
-	title = "Safe, Reliable, and Trustworthy Nannies - San Diego, CA | Nannies CA"
+	title = "Safe and Trustworthy Nannies - San Diego, CA | Nannies CA"
 	description = "Find a nanny with no finder's fee in San Diego, La Jolla, Coronado, Carlsbad, Oceanside, Encinitas, Solana Beach, Del Mar, or surrounding areas."
 	return render(request, 'about.html', {'title': title, 'description': description})
 
 
 def faq(request):
-	title = "Questions and Answers About Our Nannies - San Diego, CA | Nannies CA"
+	title = "Questions About Our Nannies - San Diego, CA | Nannies CA"
 	description = "Your resource for finding a safe, reliable, and trustworthy nanny to care for your child."
 	return render(request, 'faq.html', {'title': title, 'description': description})
 
@@ -54,10 +54,10 @@ def contact_email(request, first, last, phone, body):
 	# return first
 
 
-def news(request):
+def blog(request):
 	title = "Children's Events and Activites - San Diego, CA | Nannies CA"
 	description = "San Diego children's events and activities."
-	return render(request, 'news.html', {'title': title, 'description': description})
+	return render(request, 'blog.html', {'title': title, 'description': description})
 
 
 def login(request):

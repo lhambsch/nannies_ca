@@ -6,10 +6,10 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'nannies_ca.views.home', name='home'),
-    url(r'^about/', 'nannies_ca.views.about', name='about'),
-    url(r'^faq/', 'nannies_ca.views.faq', name='faq'),
-    url(r'^contact/', 'nannies_ca.views.contact', name='contact'),
-    url(r'^news/', 'nannies_ca.views.news', name='news'),
+    url(r'^about$', 'nannies_ca.views.about', name='about'),
+    url(r'^faq$', 'nannies_ca.views.faq', name='faq'),
+    url(r'^contact$', 'nannies_ca.views.contact', name='contact'),
+    url(r'^blog/$', 'nannies_ca.views.blog', name='blog'),
 
     # user auth urls
     url(r'^login/', 'nannies_ca.views.login', name='login'),

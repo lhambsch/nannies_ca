@@ -25,17 +25,17 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <a class="title" href="/"><img id="main-logo" src="/static/img/NanniesCA_logo.png" alt=""></a>
+                <a class="title" href="{% url 'home' %}"><img id="main-logo" src="/static/img/NanniesCA_logo.png" alt=""></a>
                 <p id="phone"><a href="tel:858-230-8937">858-230-8937</a></p>
-                <div id="icon-menu"><img src="/static/img/list.png" alt=""></div>
+                <div id="icon-menu"><img src="/static/img/list.jpg" alt=""></div>
                 <div id='nav-div'>
                     <nav>
                         <ul>
-                            <li><a href="/" id="top-item">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/faq">FAQ</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                            <li><a href="/news">Blog</a></li>
+                            <li><a href="{% url 'home' %}" id="top-item">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'faq' %}">FAQ</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'blog' %}">Blog</a></li>
                             <!-- <li><a href="/family" id="log-in">Log In</a></li> -->
                         </ul>
                     </nav>

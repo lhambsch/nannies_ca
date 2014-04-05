@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'crispy_forms',
     'customer_area',
+    'nannies_ca',
     'south',
 )
 
