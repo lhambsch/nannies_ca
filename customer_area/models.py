@@ -38,3 +38,14 @@ class Family(models.Model):
 	nanny = models.ForeignKey(Nanny, related_name="family_nanny", null=True)
 	user = models.ForeignKey(User, related_name="family_user", null=True)
 
+class Article(models.Model):
+	article = models.TextField()
+	author = models.ForeignKey(User, related_name="blog_author", null=True)
+	created_on = models.DateField(auto_now_add=True)
+	title = models.CharField(max_length=70)
+
+class Comment(models.Model):
+	author = models.ForeignKey(User, related_name="comment_author")
+	comment = models.TextField()
+	created_on = models.DateField(auto_now_add=True)
+	article = models.ForeignKey(Article, related_name="comment_blog", null=True)

@@ -224,7 +224,7 @@ aside.solo-aside {
     height: 80px;
 }
 
-aside h3, aside p {
+aside h3, aside p, aside h2 {
     margin: 5px 15px;
 }
 
@@ -419,7 +419,7 @@ article {
         color: white;
     }
 
-    aside h3, aside p {
+    aside h3, aside p, aside h2 {
         margin: 5px 15px;
     }
 }

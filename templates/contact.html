@@ -14,7 +14,7 @@
         </aside>
         
         <article id="contact">
-            <form action="/contact/" method="post" id="contact-form">{% csrf_token %}
+            <form action="{% url 'contact' %}" method="post" id="contact-form">{% csrf_token %}
                 {{ form|crispy }}
                 <button type="Submit">Submit</button>
             </form>
