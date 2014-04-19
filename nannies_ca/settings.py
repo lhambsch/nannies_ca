@@ -48,7 +48,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'dj-static',
     'customer_area',
     'nannies_ca',
     'south',
