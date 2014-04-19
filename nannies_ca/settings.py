@@ -12,6 +12,15 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+#static asset configuration
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_PATH, 'static'),
+)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -39,6 +48,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'dj-static',
     'customer_area',
     'nannies_ca',
     'south',
@@ -92,14 +102,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 
-# STATIC_ROOT = '/Users/lukashambsch/envs/nannies_ca/dev/nannies_ca/static'
+# # STATIC_ROOT = '/Users/lukashambsch/envs/nannies_ca/dev/nannies_ca/static'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-    '/static/'
-)
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, "static"),
+#     '/static/'
+# )
 
 # Host for sending email
 EMAIL_HOST = 'smtp.gmail.com'
