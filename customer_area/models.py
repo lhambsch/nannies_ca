@@ -44,6 +44,15 @@ class Article(models.Model):
 	created_on = models.DateField(auto_now_add=True)
 	title = models.CharField(max_length=70)
 
+	class Meta:
+		ordering = ['-created_on']
+
+
+	def __unicode__(self):
+		return u'{0}'.format(self.title)
+
+
+
 class Comment(models.Model):
 	author = models.ForeignKey(User, related_name="comment_author")
 	comment = models.TextField()

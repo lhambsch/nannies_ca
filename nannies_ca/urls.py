@@ -9,7 +9,11 @@ urlpatterns = patterns('',
     url(r'^about/$', 'nannies_ca.views.about', name='about'),
     url(r'^faq/$', 'nannies_ca.views.faq', name='faq'),
     url(r'^contact/$', 'nannies_ca.views.contact', name='contact'),
-    url(r'^blog/$', 'nannies_ca.views.blog', name='blog'),
+    # url(r'^blog/$', 'nannies_ca.views.blog', name='blog'),
+
+    # blog post urls
+    url(r'^blog/$', 'customer_area.views.blog', name='blog'),
+    url(r'^blog/([0-9]*)/$', 'customer_area.views.article', name="article"),
 
     # user auth urls
     url(r'^login/', 'nannies_ca.views.login', name='login'),

@@ -55,6 +55,28 @@ textarea {
     padding: 0.2em 0;
 }
 
+.article-titles {
+    color: #008AD3;
+}
+
+.article-titles a {
+    color: #008AD3;
+    
+}
+
+.article-link {
+    color: #00507A;
+}
+
+.article-info {
+    color: gray;
+}
+
+.article-body {
+    text-indent: 50px;
+    /*font-size: 14px;*/
+}
+
 
 /* ==========================================================================
    ========================================================================== */

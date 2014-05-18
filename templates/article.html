@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        <article>
+            <!-- <a href="{% url 'blog' %}">Main</a> -->
+            <header>
+                <h1>{{ article.title }}</h1>
+            </header>
+            <span class="article-info">{{ article.created_on }}</span>
+            <div class="article-info">By: {{ article.author.username }}</div>
+            <p class="article-body">
+                {{ article.article }}
+            </p>
+        </article>
+
+
+    </div> <!-- #main -->
+</div> <!-- #main-container -->
+{% endblock %}
