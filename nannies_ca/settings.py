@@ -122,5 +122,5 @@ EMAIL_USE_TLS = True
 
 # CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+#import dj_database_url
+#DATABASES['default'] = dj_database_url.config()
