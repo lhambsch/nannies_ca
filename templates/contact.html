@@ -6,13 +6,12 @@
 <div class="main-container">
     <div class="main wrapper clearfix">
 
-        <p>If you have any comments or questions for us please feel free to give us a call at <a href="tel:858-230-8937" class="phone-link">858-230-8937</a>, or fill out our contact form below. We look forward to hearing from you.</p>
+        <p>If you have any comments or questions for us please feel free to give us a call at <a href="tel:1-800-613-8755" class="phone-link">1-800-613-8755</a>, or fill out our contact form below. We look forward to hearing from you.</p>
 
         <aside class="solo-aside">
             <h3>Starting Your Search</h3>
-            <p>The fastest way to start your search is to call us directly at <a href="tel:858-230-8937" style="color:white;">858-230-8937</a>!</p>
+            <p>The fastest way to start your search is to call us directly at <a href="tel:1-800-613-8755" style="color:white;">1-800-613-8755</a>!</p>
         </aside>
-        
         <article id="contact">
             <form action="{% url 'contact' %}" method="post" id="contact-form">{% csrf_token %}
                 {{ form|crispy }}
@@ -24,7 +23,6 @@
         {% endif %}
         </article>
 
-        
 
     </div> <!-- #main -->
 </div> <!-- #main-container -->
