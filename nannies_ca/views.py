@@ -10,7 +10,7 @@ from django.template import RequestContext
 
 
 def home(request):
-	title = "Find a Nanny, No Finder's Fee - San Diego, CA | Nannies CA"
+	title = "Find a Nanny the Easy Way - San Diego, CA | Nannies CA"
 	description = "Nannies CA provides full-time nanny services for families in or around San Diego, CA who want a trustworthy nanny for their child or children."
 	return render(request, 'index.html', {'title': title, 'description': description})
 
